@@ -1,5 +1,5 @@
 const button=document.querySelector('#click');
-const newQuote=document.querySelector('.new-quote');
+const quote=document.querySelector('#quote');
 const url='http://quotes.stormconsultancy.co.uk/random.json';
 
 
@@ -12,19 +12,13 @@ function getNewQuote(){
         })
         .then(function(data){
             console.log(data);
-
-            const p=document.createElement('p');
             
-            p.appendChild(document.createTextNode(JSON.stringify(data.quote)));
+            let d=data
+            d.quote( document.createTextNode(quote.value));   
 
-            newQuote.appendChild(p);
-
-            newQuote.removeChild(p);
-        
             
-
+            
         })
-
 
         .catch(function(err){
             console.log('Something went wrong!',err);
