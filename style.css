@@ -1,6 +1,72 @@
 @import url('https://fonts.googleapis.com/css?family=Shadows+Into+Light');
+@import url('https://fonts.googleapis.com/css?family=Dosis');
+
 
 body{
-    font-family: 'Shadows Into Light', cursive;
-    font-size: 30px;
+    padding: 0;
+    margin: 0;
+    background: url('./img/city.jpeg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    
 }
+
+.main{
+    text-align: center;
+}
+
+h1{
+    font-family: 'Shadows Into Light', cursive;
+    font-size: 50px;
+    margin: auto;
+    font-weight: bold;
+    padding: 50px 0 30px 0;
+    margin: auto;
+    color: rgb(116, 116, 116) ;
+    text-transform: capitalize;
+}
+
+.new-quote{
+    font-family: 'Dosis', sans-serif;
+    font-size: 30px;
+    margin: auto;
+    text-align: center;
+    position: static;
+    color: black;
+}
+
+.author{
+    padding: 10px;
+    margin: 10px 0 10px 0;
+    font-style: italic;
+    position: static;
+}
+
+#click{
+    font-size: 13px ;
+    text-transform: uppercase;
+    height: 40px;
+    width: 180px;
+    cursor: pointer;
+    margin: auto;
+    position: static;
+    background-color: white;
+    color:black;
+    border:3px solid grey;
+    outline: yellow;
+}
+
+#click:hover{
+    font-size: 13px ;
+    text-transform: uppercase;
+    height: 40px;
+    width: 180px;
+    cursor: pointer;
+    margin: auto;
+    position: relative;
+    background-color:grey;
+    color: white;
+    border: none; 
+}
+
+

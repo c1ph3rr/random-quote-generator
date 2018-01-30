@@ -1,5 +1,4 @@
 const button=document.querySelector('#click');
-
 const newQuote=document.querySelector('.new-quote');
 const url='http://quotes.stormconsultancy.co.uk/random.json';
 
@@ -13,14 +12,11 @@ function getNewQuote(){
         })
         .then(function(data){
 
-            let q=newQuote.childNodes[0];
-            let auth=newQuote.childNodes[3];
-
-            q=String(data.quote);
-            auth=String(data.author);
+            let q=String(data.quote);
+            let auth=String(data.author);
             
             let quot=document.querySelector('#quote').innerHTML=q;
-            let author=document.querySelector('#author').innerHTML=auth;
+            let author=document.querySelector('#author').innerHTML="-"+auth;
             
         })
 
