@@ -8,15 +8,15 @@ button.addEventListener('click',getNewQuote);
 function getNewQuote(){
     fetch(url)
         .then(function(res){
-          return res.json();
+            return res.json();
         })
         .then(function(data){
-            console.log(data);
-            
-            let d=data
-            d.quote( document.createTextNode(quote.value));   
 
+            let q=String(data.quote);
+            let auth=String(data.author);
             
+            let quot=document.querySelector('#quote').innerHTML=q;
+            let author=document.querySelector('#author').innerHTML="-"+auth;
             
         })
 
